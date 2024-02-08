@@ -51,7 +51,7 @@ function downloadPDF() {
     // Replace 'your_pdf_url.pdf' with the actual URL of your PDF file
     //var pdfUrl = 'Document/Resume.pdf';
     //this is for github pages redirection
-    var pdfUrl = 'https://raw.githubusercontent.com/manishsharma1804/portfolio/main/path-to/Resume.pdf'
+    var pdfUrl = 'https://raw.githubusercontent.com/manishsharma1804/portfolio/main/Document/Resume.pdf'
 
     // Create a link element
     var link = document.createElement('a');
