@@ -216,7 +216,7 @@ section {
 .home-sci {
     position: absolute;
     bottom: 4rem;
-    width: 170px;
+    width: 195px;
     display: flex;
     justify-content: space-between;
 }
@@ -863,7 +863,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home-sci {
-        width: 160px;
+        width: 180px;
     }
 
     .home-sci a {
