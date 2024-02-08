@@ -47,3 +47,25 @@ window.onscroll = () => {
 
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
+function downloadPDF() {
+    // Replace 'your_pdf_url.pdf' with the actual URL of your PDF file
+    var pdfUrl = 'file:///D:/WORKSPACE/portfolio/Document/Resume.pdf';
+
+    // Create a link element
+    var link = document.createElement('a');
+
+    // Set the href attribute to the PDF URL
+    link.href = pdfUrl;
+
+    // Set the download attribute with the desired file name
+    link.download = 'Resume.pdf';
+
+    // Append the link to the body
+    document.body.appendChild(link);
+
+    // Trigger a click on the link to start the download
+    link.click();
+
+    // Remove the link from the body after the download is initiated
+    document.body.removeChild(link);
+}
