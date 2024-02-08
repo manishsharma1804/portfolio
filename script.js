@@ -49,7 +49,7 @@ window.onscroll = () => {
 }
 function downloadPDF() {
     // Replace 'your_pdf_url.pdf' with the actual URL of your PDF file
-    var pdfUrl = 'file:///D:/WORKSPACE/portfolio/Document/Resume.pdf';
+    var pdfUrl = 'Document/Resume.pdf';
 
     // Create a link element
     var link = document.createElement('a');
