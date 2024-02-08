@@ -258,45 +258,40 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-        <form action="#">
+        <form action="https://formspree.io/f/mjvnydvd" method="post">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Full Name" name="fullName" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email" required>
+                    <input type="email" placeholder="Email" name="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                     <span class="focus"></span>
                 </div>
-
                 <span class="animate scroll" style="--i:3;"></span>
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="tel" placeholder="Valid 10 digit Mobile Number" name="mobile" required pattern="[0-9]{10}">
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
+                    <input type="text" placeholder="Email Subject" name="emailsubject" required>
                     <span class="focus"></span>
                 </div>
-
                 <span class="animate scroll" style="--i:5;"></span>
             </div>
-
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <span class="focus"></span>
-
                 <span class="animate scroll" style="--i:7;"></span>
             </div>
-
             <div class="btn-box btns">
                 <button type="submit" class="btn">Submit</button>
-
                 <span class="animate scroll" style="--i:9;"></span>
             </div>
         </form>
+        
     </section>
 
     <!-- footer design -->
