@@ -16,9 +16,6 @@
   #desktop-nav {
     display: none;
   }
-  #hamburger-nav {
-    display: flex;
-  }
   #experience,
   .experience-details-container {
     margin-top: 2rem;
@@ -88,7 +85,7 @@
   }
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    margin-top: 25px;
     justify-content: center;
   }
   .section__text__p2 {
@@ -99,5 +96,12 @@
   }
   .text-container {
     text-align: justify;
+  }
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 600px) {
+  .details-container {
+    flex: unset; /* Removes flex: 1 for mobile view */
   }
 }

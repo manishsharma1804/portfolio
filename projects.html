@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+        <!-- Navigation -->
+        <nav id="desktop-nav">
+            <div class="logo">Manish Sharma
+                <button id="dark-mode-toggle">
+                    <i class="fa-solid fa-sun" id="sun-icon"></i>
+                    <i class="fa-solid fa-moon" id="moon-icon"></i>
+                </button>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li>
+                </li>
+                
+            </ul>
+        </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo">Manish Sharma</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!-- Projects Section -->
+    <section id="projects">
+        <p class="section__text__p1">Browse All My Projects</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <!-- Add all your project items here -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.jpg" alt="University Management" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">University Management</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/manishsharma1804/UniversityWebsite', '_blank')">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://manishsharma1804.github.io/CollegeWebsite/', '_blank')">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Web Chat Application" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Web Chat Application</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/manishsharma1804/Chat-Web-Application', '_blank')">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://manishsharma1804.github.io/Chat-Web-Application/', '_blank')">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Web Music Player" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Web Music<br> Player</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/manishsharma1804/Music-Player', '_blank')">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://manishsharma1804.github.io/Music-Player/', '_blank')">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more project items as needed -->
+        </div>
+
+        <!-- More Projects Button -->
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.location.href='index.html'">Back to Main</button>
+        </div>
+            <!-- Footer -->
+    <footer>
+        <p>Copyright &#169; 2024 Manish Sharma. All Rights Reserved.</p>
+    </footer>
+    </section>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

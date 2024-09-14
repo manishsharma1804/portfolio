@@ -6,9 +6,51 @@
   margin: 0;
   padding: 0;
 }
+/* General Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3); /* Scrollbar color */
+  border-radius: 4px; /* Rounded corners for the scrollbar */
+  transition: background 0.3s; /* Smooth transition on hover */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5); /* Darker color when hovered */
+}
+
+/* Firefox */
+body {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Scrollbar color and track color */
+}
+
+/* Dark Mode Scrollbar */
+body.dark-mode {
+  scrollbar-color: rgba(255, 255, 255, 0.3) !important; /* Scrollbar color and track color for dark mode */
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3) !important; /* Light color for scrollbar in dark mode */
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5); /* Lighter color when hovered in dark mode */
+}
 
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  word-break: break-word;
+  transition: background-color 300ms ease, color 300ms ease;
 }
 
 html {
@@ -28,34 +70,32 @@ a,
 
 /* DESKTOP NAV */
 
-nav,
-.nav-links {
+nav, .nav-links {
   display: flex;
 }
 
 nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh;
+  justify-content: space-between;
+  align-items:center;
+  height: 18vh;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
 .nav-links {
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 18px;
 }
 
 a {
   color: black;
   text-decoration: none;
-  text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
   text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-underline-offset: 0.5rem;
 }
 
 .logo {
@@ -138,14 +178,6 @@ a:hover {
   transform: none;
 }
 
-.hamburger-icon span:first-child {
-  opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-  transform: none;
-}
-
 /* SECTIONS */
 
 section {
@@ -154,6 +186,7 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  scroll-margin-top: 70px; /* Adjust this value to the height of your nav bar */
 }
 
 .section-container {
@@ -176,6 +209,11 @@ section {
   margin: auto 0;
 }
 
+.text-container p {
+  text-align: justify;
+  text-justify: inter-word; /* Optional: improves text justification */
+}
+
 .section__text {
   align-self: center;
   text-align: center;
@@ -186,16 +224,17 @@ section {
 }
 
 .section__text__p1 {
+  font-size: 1.5rem; /* Adjusted font size */
   text-align: center;
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1.75rem; /* Adjusted font size */
   margin-bottom: 1rem;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 3rem; /* Adjusted font size */
   text-align: center;
 }
 
@@ -323,7 +362,7 @@ section {
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.75rem; /* Adjusted font size */
   margin-bottom: 2rem;
 }
 
@@ -353,6 +392,56 @@ article .icon {
   cursor: default;
 }
 
+
+/* Skills Section*/
+#skills {
+  position: relative;
+}
+
+.skills-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem; /* Adjusted font size */
+  margin-bottom: 2rem;
+}
+.detailsss-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+}
+
+.skills-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+
+
+
 /* PROJECTS SECTION */
 
 #projects {
@@ -373,6 +462,7 @@ article .icon {
 .project-title {
   margin: 1rem;
   color: black;
+  font-size: 1.5rem; /* Adjusted font size */
 }
 
 .project-btn {
@@ -423,10 +513,420 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  margin-top: auto;
+  text-align: center;
+  padding: 1em;
 }
 
 footer p {
   text-align: center;
+}
+
+/* Sticky Navigation */
+#desktop-nav {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  background-color: white; /* Adjust the background color as needed */
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+#hamburger-nav {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: white; /* Adjust the background color as needed */
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+
+
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: currentColor;
+}
+#dark-mode-togglee {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: currentColor;
+}
+
+#moon-icon {
+  display: none; /* Initially hide the moon icon */
+}
+
+body.dark-mode #moon-icon {
+  display: inline; /* Show the moon icon in dark mode */
+}
+
+body.dark-mode #sun-icon {
+  display: none; /* Hide the sun icon in dark mode */
+}
+
+#sun-icon {
+  display: inline; /* Show the sun icon in light mode */
+}
+
+/* Dark Mode General */
+body.dark-mode {
+  background-color: #121212; /* Dark background for body */
+  color: #e0e0e0; /* Light text color for body */
+}
+
+/* Dark Mode Navbar */
+body.dark-mode #desktop-nav {
+  background-color: #121212; /* Dark background color for nav */
+}
+
+body.dark-mode .nav-links a {
+  color: #e0e0e0; /* Light color for nav links */
+}
+
+body.dark-mode .logo {
+  color: #e0e0e0; /* Light color for the logo */
+}
+
+/* Dark Mode Links and Buttons */
+body.dark-mode a {
+  color: #bb86fc; /* Light color for links */
+}
+
+body.dark-mode .btn {
+  color: #e0e0e0; /* Light text color for buttons */
+  border-color: #bb86fc; /* Light border color for buttons */
+}
+
+body.dark-mode .btn-color-1,
+body.dark-mode .btn-color-2 {
+  border-color: #bb86fc; /* Light border color for buttons */
+}
+
+body.dark-mode .btn-color-1:hover,
+body.dark-mode .btn-color-2:hover {
+  background-color: #bb86fc; /* Light background color on hover */
+}
+
+/* Dark Mode Nav */
+body.dark-mode nav {
+  background-color: #1f1f1f; /* Dark background color for nav */
+}
+
+body.dark-mode .nav-links a {
+  color: #e0e0e0; /* Light color for nav links */
+}
+
+body.dark-mode .nav-links a:hover {
+  color: whitesmoke; /* Light color for nav link hover */
+}
+
+/* Dark Mode Profile Section */
+body.dark-mode #profile .section__text p {
+  color: #e0e0e0; /* Light color for text */
+}
+
+body.dark-mode #profile .btn-container .btn {
+  border-color: #bb86fc; /* Light border color for profile buttons */
+}
+
+body.dark-mode #profile .icon {
+  filter: brightness(0) invert(1); /* Invert icons for dark mode */
+}
+
+/* Dark Mode About Section */
+body.dark-mode #about .details-container  {
+  background-color: #1e1e1e; /* Dark background color for about section details */
+  border-color: #333333; /* Darker border color */
+}
+
+body.dark-mode #about .text-container p {
+  color: #e0e0e0; /* Light text color */
+}
+
+/* Dark Mode Experience Section */
+body.dark-mode #experience .experience-sub-title {
+  color: #e0e0e0; /* Light color for experience section titles */
+}
+
+body.dark-mode #experience .detailsss-container {
+  background-color: #1e1e1e; /* Dark background color for experience section details */
+  border-color: #333333; /* Darker border color */
+}
+
+
+
+
+
+
+/* Dark Mode skills Section */
+body.dark-mode #skills .skills-sub-title {
+  color: #e0e0e0; /* Light color for experience section titles */
+}
+
+body.dark-mode #skills .details-container {
+  background-color: #1e1e1e; /* Dark background color for experience section details */
+  border-color: #333333; /* Darker border color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dark Mode Projects Section */
+body.dark-mode #projects .color-container {
+  background-color: #1e1e1e; /* Dark background color for projects section details */
+  border-color: #333333; /* Darker border color */
+}
+
+body.dark-mode #projects .project-title {
+  color: #e0e0e0; /* Light color for project titles */
+}
+
+body.dark-mode #projects .btn-color-2 {
+  color: #e0e0e0; /* Light color for project buttons */
+  border-color: #bb86fc; /* Light border color */
+}
+
+body.dark-mode #projects .btn-color-2:hover {
+  background-color: #bb86fc; /* Light background color on hover */
+}
+
+/* Dark Mode Contact Section */
+body.dark-mode #contact {
+  border-color: #333333; /* Darker border color */
+}
+
+body.dark-mode #contact .contact-info-container p {
+  color: #e0e0e0; /* Light text color for contact info */
+}
+
+/* Dark Mode Popup Container */
+.dark-mode .popup-overlay {
+  background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+}
+
+.dark-mode .popup-content {
+  background-color: #333; /* Dark background for the popup content */
+  color: #fff;            /* Light text color */
+  border: 1px solid #555; /* Optional: add a border to distinguish the popup */
+}
+
+.dark-mode .close-popup {
+  color: #fff;            /* Light color for the close button */
+}
+
+.dark-mode .popup-btn {
+  color: #fff;            /* Light color for the popup button icon */
+}
+body.dark-mode .sidenav {
+  background-color: black; /* Dark background for sidenav */
+}
+
+body.dark-mode .sidenavv {
+  background-color: black; /* Dark background for sidenavv */
+}
+
+body.dark-mode .sidenav-links a {
+  color: #e0e0e0; /* Light text color for sidenav links */
+}
+
+
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%; /* Circular shape */
+  width: 50px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  font-size: 1.5rem; /* Adjust icon size */
+  cursor: pointer;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hover Effect */
+.scroll-to-top:hover {
+  background-color: #555;
+  transform: scale(1.1); /* Slightly enlarges the button on hover */
+}
+
+/* Show button when visible */
+.scroll-to-top.visible {
+  display: flex;
+  opacity: 1;
+}
+
+.scroll-to-top.hidden {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Popup container */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup content box */
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  top: 5%;
+  width: 70%;
+  max-width: 600px;
+  max-height: 80vh; /* Limits the height to 80% of the viewport */
+  overflow-y: auto; /* Makes the popup scrollable */
+  border-radius: 8px;
+  text-align: left;
+  color: #333;
+  position: relative;
+}
+
+/* Close button */
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup-btn {
+  background: none;      
+  border: none;                    
+  cursor: pointer;        
+  font-size: 18px;     
+  color: #e0e0e0;   
+  margin-left: 10px;  
+  font-weight: normal; 
+     
+}
+.popup-btn i {
+  margin: 0;     
+  line-height: 0;        
+}
+
+
+/* Class to disable scrolling */
+.body-no-scroll {
+  overflow: hidden;
+}
+
+.sidenavv{
+  position: fixed;
+  font-size: 12px;
+  width: 100%; 
+  background-color: whitesmoke;
+  z-index: 11111;
+  padding-left: 25px;
+  
+}
+span.btnn{
+  margin-left: 80px;
+  padding-top: 10px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 111111;
+  top: 0;
+  right: 0;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+  .sidenav  {
+    display: none;
+  }
+  .sidenavv{
+    display: none;
+  }
 }
