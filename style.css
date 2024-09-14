@@ -893,13 +893,10 @@ body.dark-mode .sidenav-links a {
   width: 100%; 
   background-color: whitesmoke;
   z-index: 11111;
-  padding-left: 25px;
   height: 55px;
   
 }
-span.btnn{
-  bottom: 7px;
-}
+
 .sidenav {
   height: 100%;
   width: 0;
