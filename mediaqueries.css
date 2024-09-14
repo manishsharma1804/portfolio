@@ -45,8 +45,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
+  #contact {
     height: 40vh;
   }
   #profile {
@@ -99,9 +98,9 @@
   }
 }
 
-/* Media Query for Mobile View */
+/* Media Query for Mobile View 
 @media screen and (max-width: 600px) {
   .details-container {
-    flex: unset; /* Removes flex: 1 for mobile view */
+    flex: unset; /* Removes flex: 1 for mobile view 
   }
-}
+}*/

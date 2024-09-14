@@ -1,10 +1,22 @@
+// Function to open the sidenav
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").classList.add("open");
+  document.getElementById("overlay").classList.add("show");
 }
 
+// Function to close the sidenav
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").classList.remove("open");
+  document.getElementById("overlay").classList.remove("show");
 }
+
+// Close the sidenav if clicked outside
+window.onclick = function(event) {
+  if (!event.target.closest('.sidenav') && !event.target.closest('.btnn')) {
+    closeNav();
+  }
+}
+
 
 
 

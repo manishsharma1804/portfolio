@@ -533,15 +533,6 @@ footer p {
   z-index: 1000; /* Ensure it stays on top of other content */
 }
 
-#hamburger-nav {
-  position: -webkit-sticky; /* For Safari */
-  position: sticky;
-  top: 0;
-  height: 100px;
-  width: 100%;
-  background-color: white; /* Adjust the background color as needed */
-  z-index: 1000; /* Ensure it stays on top of other content */
-}
 
 
 
@@ -557,7 +548,7 @@ footer p {
   border: none;
   cursor: pointer;
   font-size: 1.5rem; /* Adjust size as needed */
-  color: currentColor;
+  color: orangered;
 }
 
 #moon-icon {
@@ -678,6 +669,26 @@ body.dark-mode #skills .details-container {
 
 
 
+
+.sidenavv h2 {
+  display: flex;
+  top:15px;
+  justify-content: flex-start; /* Aligns the title and toggle button to the left */
+  align-items: center; /* Vertically centers items */
+  padding: 0 10px; /* Adds padding inside the h2 */
+  position: relative; /* Ensures positioning for the btnn */
+}
+
+.btnn {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 47px; /* Positions the span to the far right */
+}
+
+#dark-mode-togglee {
+  margin-left: 30px; /* Adds a little space between the title and the dark mode toggle */
+}
 
 
 
@@ -828,6 +839,7 @@ body.dark-mode .sidenav-links a {
   background: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
+  z-index: 111111;
 }
 
 /* Popup content box */
@@ -882,23 +894,24 @@ body.dark-mode .sidenav-links a {
   background-color: whitesmoke;
   z-index: 11111;
   padding-left: 25px;
+  height: 55px;
   
 }
 span.btnn{
-  margin-left: 80px;
-  padding-top: 10px;
+  bottom: 7px;
 }
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 111111;
+  z-index: 1111111;
   top: 0;
   right: 0;
   background-color: whitesmoke;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  transition: 0.5s; /* Smooth transition when opening and closing */
 }
 
 .sidenav a {
@@ -909,7 +922,14 @@ span.btnn{
   display: block;
   transition: 0.3s;
 }
-
+/* Remove list style for li elements */
+.sidenav li {
+  list-style-type: none; /* Removes the bullet points */
+}
+/* Open sidenav */
+.sidenav.open {
+  width: 250px; /* Set the width when the sidenav is open */
+}
 .sidenav a:hover {
   color: #f1f1f1;
 }
@@ -921,6 +941,22 @@ span.btnn{
   font-size: 36px;
   margin-left: 50px;
 }
+/* Overlay to cover the rest of the screen when sidenav is open */
+#overlay {
+  position: fixed;
+  display: none; /* Hidden by default */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+  z-index: 0; /* Behind the sidenav */
+}
+
+/* Show the overlay when sidenav is open */
+#overlay.show {
+  display: block;
+}
 
 @media screen and (min-width: 1024px) {
   .sidenav  {
@@ -928,5 +964,14 @@ span.btnn{
   }
   .sidenavv{
     display: none;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 15px;
   }
 }
