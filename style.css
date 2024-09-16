@@ -547,7 +547,7 @@ footer p {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1.5rem; /* Adjust size as needed */
+  font-size: 1rem; /* Adjust size as needed */
   color: orangered;
 }
 
@@ -588,7 +588,7 @@ body.dark-mode .logo {
 
 /* Dark Mode Links and Buttons */
 body.dark-mode a {
-  color: #bb86fc; /* Light color for links */
+  color: white; /* Light color for links */
 }
 
 body.dark-mode .btn {
@@ -680,14 +680,19 @@ body.dark-mode #skills .details-container {
 }
 
 .btnn {
-  font-size: 30px;
+  margin-left: 25px;
   cursor: pointer;
   position: absolute;
-  right: 47px; /* Positions the span to the far right */
+  top: 1px;
+
 }
 
 #dark-mode-togglee {
-  margin-left: 30px; /* Adds a little space between the title and the dark mode toggle */
+  
+  position:absolute;
+  right: 1px;
+  margin-right: 20PX;
+  top: 3px;
 }
 
 
@@ -889,11 +894,11 @@ body.dark-mode .sidenav-links a {
 
 .sidenavv{
   position: fixed;
-  font-size: 12px;
+  font-size: 10px;
   width: 100%; 
   background-color: whitesmoke;
   z-index: 11111;
-  height: 55px;
+  height: 50px;
   
 }
 
@@ -903,7 +908,7 @@ body.dark-mode .sidenav-links a {
   position: fixed;
   z-index: 1111111;
   top: 0;
-  right: 0;
+  left: 0;
   background-color: whitesmoke;
   overflow-x: hidden;
   transition: 0.5s;
@@ -914,7 +919,7 @@ body.dark-mode .sidenav-links a {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -947,7 +952,7 @@ body.dark-mode .sidenav-links a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
-  z-index: 0; /* Behind the sidenav */
+  z-index: 1111; /* Behind the sidenav */
 }
 
 /* Show the overlay when sidenav is open */

@@ -84,7 +84,7 @@
   }
   .section__pic-container {
     width: auto;
-    margin-top: 25px;
+    margin-top: 60px;
     justify-content: center;
   }
   .section__text__p2 {
@@ -95,6 +95,7 @@
   }
   .text-container {
     text-align: justify;
+    margin: 10px;
   }
 }
 
