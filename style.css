@@ -682,7 +682,6 @@ body.dark-mode #skills .details-container {
 .btnn {
   margin-left: 25px;
   cursor: pointer;
-  position: absolute;
   top: 1px;
 
 }
