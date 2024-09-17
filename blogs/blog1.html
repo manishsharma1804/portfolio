@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+    <link rel="stylesheet" href="blogs.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Manish Sharma
+            <button id="dark-mode-toggle">
+                <i class="fa-solid fa-sun" id="sun-icon"></i>
+                <i class="fa-solid fa-moon" id="moon-icon"></i>
+            </button>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="../index.html#profile">home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#experience">Experience</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="../blogsList.html">Blog</a></li>
+            <li>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        
+        <a href="../index.html#profile" onclick="closeNav()">Home</a>
+        <a href="../index.html#about" onclick="closeNav()">About</a>
+        <a href="../index.html#experience" onclick="closeNav()">Experience</a>
+        <a href="../index.html#projects" onclick="closeNav()">Projects</a>
+        <a href="../index.html#contact" onclick="closeNav()">Contact</a>
+        <a href="../blogsList.html" onclick="closeNav()">Blog</a>
+        
+      </div>
+      
+      <!-- Overlay background -->
+      <div id="overlay" onclick="closeNav()"></div>
+      <div class="sidenavv">  
+      <h2><span class="btnn" style="font: size 1rem;cursor:pointer;" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+        <button id="dark-mode-togglee">
+        <i class="fa-solid fa-sun" id="sun-icon"></i>
+        <i class="fa-solid fa-moon" id="moon-icon"></i>
+    </button>
+    
+      
+    </h2>
+    </div>
+
+    <!--Blog Section -->
+    <section id="blog">
+        <div class="blog">
+            <div class="aboutblog-containers">
+                <div class="blogDetails-container">
+                    <h3 class="title">My Journey as a Web Developer Intern</h3>
+                    <div class="AuthorDate">
+                        <p class="author"><strong><i class="fa-regular fa-user" style="color: orange;"></i></strong> Manish Sharma</p>
+                        <p class="date"><strong><i class="fa-solid fa-calendar-days" style="color: orange;"></i></strong> Sep 16, 2024</p>
+                    </div>
+                    
+    
+                    <h6><strong>Introduction:</strong><br></h6>
+                    <p>
+                        Starting a career in web development was both exciting and a bit overwhelming. My journey began with an internship where I got to experience various aspects of web development. This blog shares my experience during the internship, the projects I worked on, and the skills I picked up along the way.
+                    </p>
+    
+                    <h6>Getting Started</h6>
+                    <p>
+                        My internship began in early 2023. It was my first real taste of working in a tech environment, and it was quite a ride! The role came with its own set of challenges, but it was also a fantastic opportunity for growth.
+                    </p>
+    
+                    <h6>Key Projects</h6>
+                    <p>
+                        One of the highlights of my internship was working on an e-commerce platform. I was responsible for creating a dynamic web application that involved integrating various APIs to ensure smooth communication between the front and back ends. I got to design user-friendly interfaces with HTML and CSS and add interactive features using JavaScript.
+                    </p>
+    
+                    <p>
+                        Another major project was revamping an internal dashboard. This involved improving the user interface and making it more intuitive for the team. I learned a lot about user experience and how to make data more accessible and engaging.
+                    </p>
+    
+                    <p>
+                        Throughout these projects, I honed my skills in web development, from coding to problem-solving. The experience was invaluable and gave me a deeper understanding of how web applications are built and maintained.
+                    </p>
+    
+                    <h6>Lessons Learned</h6>
+                    <p>
+                        My internship taught me more than just technical skills. I learned about teamwork, communication, and the importance of meeting deadlines. It was a great introduction to the professional world and gave me a solid foundation for my future career.
+                    </p>
+    
+                    <p>
+                        Overall, my time as a web developer intern was incredibly rewarding. It was a period of intense learning and growth, and I’m grateful for the experience and the opportunities it provided. If you're considering a career in web development, I highly recommend taking on an internship. It's a great way to gain hands-on experience and start building your career.
+                    </p>
+    
+                    <p>
+                        Thanks for reading about my journey! If you have any questions or want to chat about web development, feel free to reach out.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &#169; 2024 Manish Sharma.</p>
+    </footer>
+    <!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" class="scroll-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+    <script src="../script.js"></script>
+</body>
+</html>

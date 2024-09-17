@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>blogs</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="blogs/blogs.css" />
+      <link rel="stylesheet" href="mediaqueries.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   </head>
+   <body>
+      <!-- Navigation -->
+      <nav id="desktop-nav">
+         <div class="logo">Manish Sharma
+            <button id="dark-mode-toggle">
+            <i class="fa-solid fa-sun" id="sun-icon"></i>
+            <i class="fa-solid fa-moon" id="moon-icon"></i>
+            </button>
+         </div>
+         <ul class="nav-links">
+            <li><a href="index.html#profile">home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="blogsList.html">Blog</a></li>
+            <li>
+            </li>
+         </ul>
+      </nav>
+      <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="index.html#profile" onclick="closeNav()">Home</a>
+         <a href="index.html#about" onclick="closeNav()">About</a>
+         <a href="index.html#experience" onclick="closeNav()">Experience</a>
+         <a href="index.html#projects" onclick="closeNav()">Projects</a>
+         <a href="index.html#contact" onclick="closeNav()">Contact</a>
+         <a href="blogsList.html" onclick="closeNav()">Blog</a>
+      </div>
+      <!-- Overlay background -->
+      <div id="overlay" onclick="closeNav()"></div>
+      <div class="sidenavv">
+         <h2><span class="btnn" style="font: size 1rem;cursor:pointer;" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+            <button id="dark-mode-togglee">
+            <i class="fa-solid fa-sun" id="sun-icon"></i>
+            <i class="fa-solid fa-moon" id="moon-icon"></i>
+            </button>
+         </h2>
+      </div>
+      <!--Search Bar-->
+      <section id="search-section">
+         <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search blogs..." />
+            <button id="search-button"><i class="fas fa-search"></i></button>
+         </div>
+      </section>
+      <!--Blog Section -->
+      <section id="experience">
+         <p class="section__text__p1">Explore My</p>
+         <h1 class="title">Blogs</h1>
+         <div class="experience">
+            <!-- Blog 6 -->
+            <div class="about-containers">
+               <a href="blogs/blog6.html" class="blog-link">
+                  <div class="detailsss-container">
+                     <h3>Blog Title: Learning JavaScript: My Path from Beginner to Confident Developer</h3>
+                     <div class="AuthorDate">
+                        <p class="author"><i class="fa-regular fa-user" style="color: orange;"></i> Manish Sharma</p>
+                        <p class="date"><i class="fa-solid fa-calendar-days" style="color: orange;"></i> Sep 16, 2024</p>
+                     </div>
+                     <p><strong>Introduction:</strong> In this blog, I talk about how I started learning JavaScript from scratch. From being confused about simple concepts like variables and loops to writing complex code, I share my personal experience, the resources I used, and tips for beginners who are just getting started with JavaScript. It's a journey of constant learning, practice, and lots of patience.</p>
+                  </div>
+               </a>
+            </div>
+            <!-- Blog 5 -->
+            <div class="about-containers">
+               <a href="blogs/blog5.html" class="blog-link">
+                  <div class="detailsss-container">
+                     <h3>Blog Title: Building My First Full-Stack Web Application</h3>
+                     <div class="AuthorDate">
+                        <p class="author"><i class="fa-regular fa-user" style="color: orange;"></i> Manish Sharma</p>
+                        <p class="date"><i class="fa-solid fa-calendar-days" style="color: orange;"></i> Sep 16, 2024</p>
+                     </div>
+                     <p><strong>Introduction:</strong> Full-stack development can be daunting, but in this blog, I explain the process of building my first full-stack web application. I talk about choosing the right tech stack, managing front-end and back-end interactions, and lessons learned while debugging and improving the app.</p>
+                  </div>
+               </a>
+            </div>
+            <!-- Blog 4 -->
+            <div class="about-containers">
+               <a href="blogs/blog4.html" class="blog-link">
+                  <div class="detailsss-container">
+                     <h3>Blog Title: How I Mastered CSS Layouts with Flexbox and Grid</h3>
+                     <div class="AuthorDate">
+                        <p class="author"><i class="fa-regular fa-user" style="color: orange;"></i> Manish Sharma</p>
+                        <p class="date"><i class="fa-solid fa-calendar-days" style="color: orange;"></i> Sep 16, 2024</p>
+                     </div>
+                     <p><strong>Introduction:</strong> Designing websites became much easier for me when I mastered Flexbox and Grid. In this blog, I break down these two powerful CSS layout systems, explain how I used them in real projects, and share tips for anyone struggling with positioning elements on a webpage.</p>
+                  </div>
+               </a>
+            </div>
+            <!-- Blog 3 -->
+            <div class="about-containers">
+               <a href="blogs/blog3.html" class="blog-link">
+                  <div class="detailsss-container">
+                     <h3>Blog Title: My Transition from Front-End to Full-Stack Development</h3>
+                     <div class="AuthorDate">
+                        <p class="author"><i class="fa-regular fa-user" style="color: orange;"></i> Manish Sharma</p>
+                        <p class="date"><i class="fa-solid fa-calendar-days" style="color: orange;"></i> Sep 16, 2024</p>
+                     </div>
+                     <p><strong>Introduction:</strong> Transitioning from front-end to full-stack development wasn’t easy, but it was worth it. In this blog, I share the key skills I had to learn, the challenges I faced, and how understanding both front-end and back-end has made me a more versatile developer.</p>
+                  </div>
+               </a>
+            </div>
+            <!-- Blog 2 -->
+            <div class="about-containers">
+               <a href="blogs/blog2.html" class="blog-link">
+                  <div class="detailsss-container">
+                     <h3>Blog Title: How I Stay Productive as a Developer: My Daily Routine</h3>
+                     <div class="AuthorDate">
+                        <p class="author"><i class="fa-regular fa-user" style="color: orange;"></i> Manish Sharma</p>
+                        <p class="date"><i class="fa-solid fa-calendar-days" style="color: orange;"></i> Sep 16, 2024</p>
+                     </div>
+                     <p><strong>Introduction:</strong> Staying productive can be a challenge for developers. In this blog, I share my daily routine and the habits that help me stay focused and productive. From time management to taking breaks, this blog offers practical tips for anyone looking to improve their workflow.</p>
+                  </div>
+               </a>
+            </div>
+            <!--Blog 1-->
+            <div class="about-containers">
+               <a href="blogs/blog1.html" class="blog-link">
+                  <div class="detailsss-container">
+                     <h3>My Journey as a Web Developer Intern</h3>
+                     <div class="AuthorDate">
+                        <p class="author"><i class="fa-regular fa-user" style="color: orange;"></i> Manish Sharma</p>
+                        <p class="date"><i class="fa-solid fa-calendar-days" style="color: orange;"></i> Sep 16, 2024</p>
+                     </div>
+                     <p>This blog outlines my experience during my Web Developer Internship at Codezeal Technology Pvt Ltd, where I developed several key web projects...</p>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </section>
+      <!-- Scroll to Top Button -->
+      <button id="scrollToTopBtn" class="scroll-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+      </button>
+      <!-- Footer -->
+      <footer>
+         <p>Copyright &#169; 2024 Manish Sharma.</p>
+      </footer>
+      <script>
+         document.getElementById('search-button').addEventListener('click', function() {
+             const query = document.getElementById('search-input').value;
+             if (query) {
+                 window.location.href = `searchresult.html?query=${encodeURIComponent(query)}`;
+             }
+         });
+         document.addEventListener("keydown", function(event) {
+         if (event.key === "Enter") {  // Check if the "Enter" key was pressed
+         document.getElementById("search-button").click();  // Trigger the button click
+         }
+         });
+      </script>
+      <script src="script.js"></script>
+   </body>
+</html>

@@ -1,0 +1,23 @@
+[
+    {
+        "title": "University Management",
+        "description": "A comprehensive management system for universities.",
+        "imageUrl": "./assets/project-1.jpg",
+        "githubUrl": "https://github.com/manishsharma1804/UniversityWebsite/",
+        "liveDemoUrl": "https://manishsharma1804.github.io/CollegeWebsite/"
+    },
+    {
+        "title": "Web Chat Application",
+        "description": "A web application designed to streamline project management tasks.",
+        "imageUrl": "./assets/project-2.png",
+        "githubUrl": "https://github.com/manishsharma1804/Chat-Web-Application/",
+        "liveDemoUrl": "https://manishsharma1804.github.io/Chat-Web-Application/"
+    },
+    {
+        "title": "Web Music Player",
+        "description": "A web application designed to streamline project management tasks.",
+        "imageUrl": "./assets/project-3.png",
+        "githubUrl": "https://github.com/manishsharma1804/Music-Player/",
+        "liveDemoUrl": "https://manishsharma1804.github.io/Music-Player/"
+    }
+]

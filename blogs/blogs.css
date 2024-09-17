@@ -1,0 +1,141 @@
+.blog {
+    position: relative;
+}
+.blog-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutblog-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.blogDetails-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+}
+
+
+/* Dark Mode for Blog Section */
+body.dark-mode #blog .blog-sub-title {
+    color: #e0e0e0;
+}
+
+body.dark-mode #blog .blogDetails-container {
+    background-color: #1e1e1e;
+    border-color: #333333;
+}
+
+.title{
+    text-align: center;
+    font-size: 25px;
+    line-height: 1;
+    margin-bottom: 25px;
+    padding: 0;
+}
+.AuthorDate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+/* Default font sizes for larger screens (desktop) */
+h1 {
+    font-size: 2.5em; /* Adjust as needed */
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1em; /* 16px if the base font size is 16px */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em; /* Adjust as needed */
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    h6 {
+        font-size: 0.9em;
+    }
+
+    p {
+        font-size: 0.9em; /* Adjust as needed */
+    }
+}
+
+/* Media query for very small mobile screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Adjust as needed */
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    h5 {
+        font-size: 0.9em;
+    }
+
+    h6 {
+        font-size: 0.8em;
+    }
+
+    p {
+        font-size: 0.8em; /* Adjust as needed */
+    }
+}

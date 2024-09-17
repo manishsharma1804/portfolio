@@ -1,326 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-</head>
-<body>
-    
-    <!-- Navigation -->
-    <nav id="desktop-nav">
-        <div class="logo">Manish Sharma
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Manish Sharma</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="mediaqueries.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+      <head>
+   <body>
+      <!-- Navigation -->
+      <nav id="desktop-nav">
+         <div class="logo">Manish Sharma
             <button id="dark-mode-toggle">
-                <i class="fa-solid fa-sun" id="sun-icon"></i>
-                <i class="fa-solid fa-moon" id="moon-icon"></i>
+            <i class="fa-solid fa-sun" id="sun-icon"></i>
+            <i class="fa-solid fa-moon" id="moon-icon"></i>
             </button>
-        </div>
-        
-        <ul class="nav-links">
+         </div>
+         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="blogsList.html">Blog</a></li>
             <li>
             </li>
-            
-        </ul>
-    </nav>
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        
-        
-        <a href="#profile" onclick="closeNav()">Home</a>
-        <a href="#about" onclick="closeNav()">About</a>
-        <a href="#experience" onclick="closeNav()">Experience</a>
-        <a href="#projects" onclick="closeNav()">Projects</a>
-        <a href="#contact" onclick="closeNav()">Contact</a>
-        <a href="#blog" onclick="closeNav()">Blog</a>
-        
+         </ul>
+      </nav>
+      <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="#profile" onclick="closeNav()">Home</a>
+         <a href="#about" onclick="closeNav()">About</a>
+         <a href="#experience" onclick="closeNav()">Experience</a>
+         <a href="#projects" onclick="closeNav()">Projects</a>
+         <a href="#contact" onclick="closeNav()">Contact</a>
+         <a href="blogsList.html" onclick="closeNav()">Blog</a>
       </div>
-      
       <!-- Overlay background -->
       <div id="overlay" onclick="closeNav()"></div>
-      <div class="sidenavv">  
-      <h2><span class="btnn" style="font: size 1rem;cursor:pointer;" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
-        <button id="dark-mode-togglee">
-        <i class="fa-solid fa-sun" id="sun-icon"></i>
-        <i class="fa-solid fa-moon" id="moon-icon"></i>
-    </button>
-    
-      
-    </h2>
-    </div>
-
-
-        
-
-    <!-- Profile Section -->
-    <section id="profile">
-        <div class="section__pic-container">
+      <div class="sidenavv">
+         <h2><span class="btnn" style="font: size 1rem;cursor:pointer;" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+            <button id="dark-mode-togglee">
+            <i class="fa-solid fa-sun" id="sun-icon"></i>
+            <i class="fa-solid fa-moon" id="moon-icon"></i>
+            </button>
+         </h2>
+      </div>
+      <!-- Profile Section -->
+      <section style="padding-top: 0;" id="profile">
+         <div class="section__pic-container">
             <img src="./assets/profile-pic.png" alt="Profile picture" />
-        </div>
-        <div class="section__text">
+         </div>
+         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Manish Sharma</h1>
             <!-- <p class="section__text__p2">Web Developer</p> -->
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+               <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+               <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/manishsharma18/', '_blank')" />
-                <img src="./assets/github.png" alt="GitHub profile" class="icon" onclick="window.open('https://github.com/manishsharma1804', '_blank')" />
+               <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/manishsharma18/', '_blank')" />
+               <img src="./assets/github.png" alt="GitHub profile" class="icon" onclick="window.open('https://github.com/manishsharma1804', '_blank')" />
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
+         </div>
+      </section>
+      <!-- About Section -->
+      <section id="about">
+         <p class="section__text__p1">Get To Know More</p>
+         <h1 class="title">About Me</h1>
+         <div class="section-container">
             <div class="about-details-container">
-                <div class="text-container">
-                    <p>Hello! I'm <strong>Manish Kumar Sharma,</strong> an analytical professional from Ranchi, Jharkhand, with a strong technical background and critical thinking skills. I excel in data-driven environments, tackling challenges with positivity and determination. <br>My journey in tech began with a passion for problem-solving and innovation, leading me to pursue a BCA at Sai Nath University and  MCA at Sarala Birla University. Over the years, I've developed a solid foundation in front-end and back-end development, focusing on scalable and efficient applications.</p>
-                </div>
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                        <h3>Experience</h3>
-                        <p>2+ years <br /> Full Stack Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p>Master's of Computer Application</p>
-                    </div>
-                </div>
+               <div class="text-container">
+                  <p>Hello! I'm <strong>Manish Kumar Sharma,</strong> an analytical professional from Ranchi, Jharkhand, with a strong technical background and critical thinking skills. I excel in data-driven environments, tackling challenges with positivity and determination. <br>My journey in tech began with a passion for problem-solving and innovation, leading me to pursue a BCA at Sai Nath University and  MCA at Sarala Birla University. Over the years, I've developed a solid foundation in front-end and back-end development, focusing on scalable and efficient applications.</p>
+               </div>
+               <div class="about-containers">
+                  <div class="details-container">
+                     <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                     <h3>total Experience</h3>
+                     <p>1+ years <br /> Full Stack Development</p>
+                  </div>
+                  <div class="details-container">
+                     <img src="./assets/education.png" alt="Education icon" class="icon" />
+                     <h3>Highest Education</h3>
+                     <p>"Master's of Computer Application"</p>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-
-
-    <!--Experience Section -->
-
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experiences</h1>
-        <div class="experience">
+         </div>
+      </section>
+      <!--Experience Section -->
+      <section id="experience">
+         <p class="section__text__p1">Explore My</p>
+         <h1 class="title">Experiences</h1>
+         <div class="experience">
             <div class="about-containers">
-            <div class="detailsss-container">
-                <h2 class="experience">Web Developer Intern 
-                    <button class="popup-btn" data-job="job1">
-                        <i class="fa-solid fa-info-circle"></i>
-                    </button>
-                </h2>
-                <p>Codezeal Technology Pvt Ltd | Ranchi, Jharkhand</p>
-                <p>Feb 2023 - Apr 2023</p>
- <!-- Popup Modal -->
-<div id="job-popup" class="popup-overlay">
-    <div class="popup-content">
-      <span class="close-popup" id="close-popup">&times;</span>
-      <h2 id="job-title"></h2>
-      <p id="job-details"></p>
-      
-      <!-- Links container -->
-      <div id="job-links"></div>
-  
-      <!-- Guide information -->
-      <p id="job-guide"></p>
-  
-      <h3>Description</h3>
-      <ul id="job-description"></ul>
-      
-      <!-- Image container for job images -->
-      <div id="job-images" class="job-images-container"></div>
-    </div>
-  </div>
-  
-  
+               <div class="detailsss-container">
+                  <h2 class="experience">Web Developer Intern 
+                     <button class="popup-btn" data-job="job1">
+                     <i class="fa-solid fa-info-circle"></i>
+                     </button>
+                  </h2>
+                  <p>Codezeal Technology Pvt Ltd | Ranchi, Jharkhand</p>
+                  <p>Feb 2023 - Apr 2023</p>
+                  <!-- Popup Modal -->
+                  <div id="job-popup" class="popup-overlay">
+                     <div class="popup-content">
+                        <span class="close-popup" id="close-popup">&times;</span>
+                        <h2 id="job-title"></h2>
+                        <p id="job-details"></p>
+                        <!-- Links container -->
+                        <div id="job-links"></div>
+                        <!-- Guide information -->
+                        <p id="job-guide"></p>
+                        <h3>Description</h3>
+                        <ul id="job-description"></ul>
+                        <!-- Image container for job images -->
+                        <div id="job-images" class="job-images-container"></div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            </div>
-            
-        </div>
-
-
-    </section>
-
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="skills">
+         </div>
+      </section>
+      <!-- Skills Section -->
+      <section id="skills">
+         <p class="section__text__p1">Explore My</p>
+         <h1 class="title">Skills</h1>
+         <div class="skills">
             <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
-                            <div>
-                                <h3>Bootstrap</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
-                            <div>
-                                <h3>Core Java</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
-                            <div>
-                                <h3>JDBC</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+               <div class="details-container">
+                  <h2 class="skills-sub-title">Frontend Development</h2>
+                  <div class="article-container">
+                     <article>
+                        <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                        <div>
+                           <h3>HTML</h3>
+                           <p>Experienced</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                        <div>
+                           <h3>CSS</h3>
+                           <p>Experienced</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                        <div>
+                           <h3>JavaScript</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                        <div>
+                           <h3>Bootstrap</h3>
+                           <p>Intermediate</p>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+               <div class="details-container">
+                  <h2 class="skills-sub-title">Backend Development</h2>
+                  <div class="article-container">
+                     <article>
+                        <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                        <div>
+                           <h3>Core Java</h3>
+                           <p>Intermediate</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                        <div>
+                           <h3>JDBC</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                     <article>
+                        <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                        <div>
+                           <h3>MySQL</h3>
+                           <p>Basic</p>
+                        </div>
+                     </article>
+                  </div>
+               </div>
             </div>
             <div class="details-container">
-                <h2 class="skills">Tools & IDEs</h2>
-                <div class="article-container">
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
-                        <div>
-                            <h3>Git</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
-                        <div>
-                            <h3>VS-Code</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
-                        <div>
-                            <h3>Eclipse</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                </div>
+               <h2 class="skills">Tools & IDEs</h2>
+               <div class="article-container">
+                  <article>
+                     <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                     <div>
+                        <h3>Git</h3>
+                        <p>Intermediate</p>
+                     </div>
+                  </article>
+                  <article>
+                     <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                     <div>
+                        <h3>VS-Code</h3>
+                        <p>Experienced</p>
+                     </div>
+                  </article>
+                  <article>
+                     <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon" />
+                     <div>
+                        <h3>Eclipse</h3>
+                        <p>Experienced</p>
+                     </div>
+                  </article>
+               </div>
             </div>
-        </div>
-    </section>
-
-    
-    <!-- Projects Section -->
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
+         </div>
+      </section>
+      <!-- Projects Section -->
+      <section id="projects">
+         <p class="section__text__p1">Browse My Recent</p>
+         <h1 class="title">Projects</h1>
+         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.jpg" alt="University Management" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">University Management</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/manishsharma1804/UniversityWebsite', '_blank')">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://manishsharma1804.github.io/CollegeWebsite/', '_blank')">Live Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Web Chat Application" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Web Chat Application</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/manishsharma1804/Chat-Web-Application', '_blank')">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://manishsharma1804.github.io/Chat-Web-Application/', '_blank')">Live Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Web Music Player" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Web Music<br> Player</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/manishsharma1804/Music-Player', '_blank')">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://manishsharma1804.github.io/Music-Player/', '_blank')">Live Demo</button>
-                    </div>
-                </div>
+               <div class="details-container color-container">
+                  <div class="article-container">
+                     <img src="./assets/project-1.jpg" alt="University Management" class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">University Management</h2>
+                  <div class="btn-container">
+                     <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/manishsharma1804/UniversityWebsite', '_blank')">Github</button>
+                     <button class="btn btn-color-2 project-btn" onclick="window.open('https://manishsharma1804.github.io/CollegeWebsite/', '_blank')">Live Demo</button>
+                  </div>
+               </div>
+               <div class="details-container color-container">
+                  <div class="article-container">
+                     <img src="./assets/project-2.png" alt="Web Chat Application" class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Web Chat Application</h2>
+                  <div class="btn-container">
+                     <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/manishsharma1804/Chat-Web-Application', '_blank')">Github</button>
+                     <button class="btn btn-color-2 project-btn" onclick="window.open('https://manishsharma1804.github.io/Chat-Web-Application/', '_blank')">Live Demo</button>
+                  </div>
+               </div>
+               <div class="details-container color-container">
+                  <div class="article-container">
+                     <img src="./assets/project-3.png" alt="Web Music Player" class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Web Music<br> Player</h2>
+                  <div class="btn-container">
+                     <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/manishsharma1804/Music-Player', '_blank')">Github</button>
+                     <button class="btn btn-color-2 project-btn" onclick="window.open('https://manishsharma1804.github.io/Music-Player/', '_blank')">Live Demo</button>
+                  </div>
+               </div>
             </div>
-        </div>
-                <!-- More Projects Button -->
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.location.href='projects.html'">More Projects</button>
-        </div>
-
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
+         </div>
+         <!-- More Projects Button -->
+         <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.location.href='projects.html'">More Projects</button>
+         </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact">
+         <p class="section__text__p1">Get in Touch</p>
+         <h1 class="title">Contact Me</h1>
+         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:manishgrdh@gmail.com">manishgrdh@gmail.com</a></p>
+               <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+               <p><a href="mailto:manishgrdh@gmail.com">mail</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/manishsharma18/" target="_blank">LinkedIn</a></p>
+               <img src="./assets/linkedin.png" alt="LinkedIn icon" style="margin-left: 20px;" class="icon contact-icon" />
+               <p><a href="https://www.linkedin.com/in/manishsharma18/" target="_blank">LinkedIn</a></p>
             </div>
-        </div>
-    </section>
-
-<!-- Scroll to Top Button -->
-<button id="scrollToTopBtn" class="scroll-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-  
-
-    <!-- Footer -->
-    <footer>
-        <p>Copyright &#169; 2024 Manish Sharma.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+         </div>
+      </section>
+      <!-- Scroll to Top Button -->
+      <button id="scrollToTopBtn" class="scroll-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+      </button>
+      <!-- Footer -->
+      <footer>
+         <p>Copyright &#169; 2024 Manish Sharma.</p>
+      </footer>
+      <script src="script.js"></script>
+   </body>
 </html>

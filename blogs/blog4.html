@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+    <link rel="stylesheet" href="blogs.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Manish Sharma
+            <button id="dark-mode-toggle">
+                <i class="fa-solid fa-sun" id="sun-icon"></i>
+                <i class="fa-solid fa-moon" id="moon-icon"></i>
+            </button>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="../index.html#profile">home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#experience">Experience</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="../blogsList.html">Blog</a></li>
+            <li>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        
+        <a href="../index.html#profile" onclick="closeNav()">Home</a>
+        <a href="../index.html#about" onclick="closeNav()">About</a>
+        <a href="../index.html#experience" onclick="closeNav()">Experience</a>
+        <a href="../index.html#projects" onclick="closeNav()">Projects</a>
+        <a href="../index.html#contact" onclick="closeNav()">Contact</a>
+        <a href="../blogsList.html" onclick="closeNav()">Blog</a>
+        
+      </div>
+      
+      <!-- Overlay background -->
+      <div id="overlay" onclick="closeNav()"></div>
+      <div class="sidenavv">  
+      <h2><span class="btnn" style="font: size 1rem;cursor:pointer;" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+        <button id="dark-mode-togglee">
+        <i class="fa-solid fa-sun" id="sun-icon"></i>
+        <i class="fa-solid fa-moon" id="moon-icon"></i>
+    </button>
+    
+      
+    </h2>
+    </div>
+
+    <!--Blog Section -->
+    <section id="blog">
+        <div class="blog">
+            <div class="aboutblog-containers">
+                <div class="blogDetails-container">
+                    <h3 class="title">How I Mastered CSS Layouts with Flexbox and Grid</h3>
+                    <div class="AuthorDate">
+                        <p class="author"><strong><i class="fa-regular fa-user" style="color: orange;"></i></strong> Manish Sharma</p>
+                        <p class="date"><strong><i class="fa-solid fa-calendar-days" style="color: orange;"></i></strong> Sep 13, 2024</p>
+                    </div>
+                    <p>
+                        If you're like me, positioning elements on a web page was one of the trickiest parts of front-end development. Thankfully, learning CSS Flexbox and Grid completely changed that for me.
+                    </p>
+                    <p>
+                        These two layout models are incredibly powerful. Flexbox is great for aligning items in one-dimensional layouts, while Grid is perfect for creating complex two-dimensional layouts. Together, they make web design much simpler and more efficient.
+                    </p>
+                    <p>
+                        I started by focusing on Flexbox. I practiced creating simple layouts like navigation bars, cards, and footers. Once I got comfortable with Flexbox, I moved on to Grid, which allowed me to build more complex layouts like multi-column pages.
+                    </p>
+                    <p>
+                        Experimenting with Flexbox and Grid behavior helped me understand how they can be used to create professional-looking, responsive layouts. Once you master these tools, you'll never struggle with CSS layouts again!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &#169; 2024 Manish Sharma.</p>
+    </footer>
+    <!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" class="scroll-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+    <script src="../script.js"></script>
+</body>
+</html>

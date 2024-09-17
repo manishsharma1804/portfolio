@@ -1,0 +1,45 @@
+[
+    {
+        "title": "My Journey as a Web Developer Intern",
+        "author": "Manish Sharma",
+        "date": "Aug 16, 2024",
+        "introduction": "This blog outlines my experience during my Web Developer Internship at ...",
+        "url": "blogs/blog1.html"
+    },
+    {
+        "title": "How I Stay Productive as a Developer: My Daily Routine",
+        "author": "Manish Sharma",
+        "date": "August 22, 2024",
+        "introduction": "Staying productive can be a challenge for developers. In this blog, I share my daily routine and the habits that help me stay focused and productive...",
+        "url": "blogs/blog2.html"
+    },
+    {
+        "title": "My Transition from Front-End to Full-Stack Development",
+        "author": "Manish Sharma",
+        "date": "Sep 10, 2024",
+        "introduction": "Transitioning from front-end to full-stack development wasn’t easy, but it was worth it. In this blog, I share the key skills I had to learn, the challenges I faced...",
+        "url": "blogs/blog3.html"
+    },
+    {
+        "title": "How I Mastered CSS Layouts with Flexbox and Grid",
+        "author": "Manish Sharma",
+        "date": "Sep 13, 2024",
+        "introduction": "Designing websites became much easier for me when I mastered Flexbox and Grid. In this blog, I break down these two powerful CSS layout systems, explain how I used them in real projects, and share tips for anyone struggling with positioning elements on a webpage.",
+        "url": "blogs/blog4.html"
+    },
+    {
+        "title": "Blog Title: Building My First Full-Stack Web Application",
+        "author": "Manish Sharma",
+        "date": "Sep 14, 2024",
+        "introduction": "Introduction: Full-stack development can be daunting, but in this blog, I explain the process of building my first full-stack web application. I talk about choosing the right tech stack, managing front-end and back-end interactions, and lessons learned while debugging and improving the app.",
+        "url": "blogs/blog5.html"
+    },
+    {
+        "title": "Learning JavaScript: My Path from Beginner to Confident Developer",
+        "author": "Manish Sharma",
+        "date": "Sep 15, 2024",
+        "introduction": "In this blog, I talk about how I started learning JavaScript from scratch. From being confused about simple concepts like variables and loops to writing complex code, I share my personal experience, the resources I used, and tips for beginners who are just getting started with JavaScript. It's a journey of constant learning, practice, and lots of patience.",
+        "url": "blogs/blog6.html"
+    }
+
+]
